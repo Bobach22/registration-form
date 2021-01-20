@@ -1,0 +1,35 @@
+
+.form__field{
+    display:flex;
+    flex-direction: column;
+    margin-top:16px;
+    margin-bottom: 16px;
+}
+
+
+.label{
+    margin-bottom:8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--color-text-normal);
+}
+
+.error{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+color: var(--color-warning);
+}
+
+.title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  color:var(--color-text-dark);
+  margin:0;
+}

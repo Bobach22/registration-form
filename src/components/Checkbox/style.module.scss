@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin:16px 0;
+  .checkbox {
+      height:28px;
+      width:28px;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 4px;
+    color:var(--color-primary);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    &:checked{
+        border:2px solid var(--color-primary);
+        background-color: #ffffff;
+    }
+    cursor:pointer;
+    
+  }
+  
+  .checkbox__hidden{
+      visibility:hidden;
+      width:0;
+      height:0;
+      margin:0;
+  }
+}
+
+.label {
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-text-normal);
+}
+
+.checked{
+  border:2px solid var(--color-primary);
+}
+.unchecked{
+  border: 1px solid var(--color-background-secondary);
+}

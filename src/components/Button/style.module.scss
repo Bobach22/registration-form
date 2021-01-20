@@ -1,0 +1,38 @@
+.button{
+    background-color:var(--color-primary);
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08),
+                0px 4px 8px rgba(44, 39, 56, 0.08);
+    border-radius:6px;
+    border:0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--color-text-white);
+    height:56px;
+    min-width:180px;
+    cursor:pointer;
+    &:hover{
+        box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08),
+                0px 24px 48px rgba(44, 39, 56, 0.16);
+    }
+    &:active{
+        border: 2px solid rgba(44, 39, 56, 0.86);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001),
+                0px 4px 8px rgba(44, 39, 56, 0.08);
+        outline:none;
+    }
+    &:disabled{
+        background:var(--color-background-secondary);
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+        cursor:not-allowed;
+        pointer-events: none;
+    }
+}
+
+.text{
+    font-family: IBM Plex Sans;
+    
+}

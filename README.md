@@ -1,3 +1,6 @@
+# This is a simple registration form
+This form created based on this [this](https://www.figma.com/file/Lz2p2uwl96ck03V4qkJL0w/Untitled?node-id=302%3A102) figma design files
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -12,7 +12,7 @@ import {
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import React from "react";
+import React, { MouseEvent } from "react";
 import styles from "./style.module.scss";
 
 const schema = yup.object().shape({
@@ -37,7 +37,7 @@ const schema = yup.object().shape({
       /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/gm,
       {
         message:
-          "Можно ввести только 11 цифр, круглые скобкиб дефис и знак плюс",
+          "Можно ввести только 11 цифр, круглые скобки, дефис и знак плюс",
       }
     ),
   language: yup.string().required("Поле не может быть пустым"),
@@ -65,14 +65,16 @@ const RegistrationForm: React.FC<any> = (props) => {
   const [checked, setChecked] = React.useState(false);
   const [language, setLanguage] = React.useState("");
 
-  const { register, handleSubmit, errors, setValue } = useForm({
+  const { register, handleSubmit, errors, setValue} = useForm({
     resolver: yupResolver(schema),
   });
-
+   
   React.useEffect(() => {
     register("accepted");
     register("language");
-  }, [register, checked, language]);
+  }, [register, checked,language]);
+
+   
 
   const handleLanguage = (language: { label: string; value: any }) => {
     const { value } = language;
@@ -80,8 +82,8 @@ const RegistrationForm: React.FC<any> = (props) => {
     setLanguage(value);
   };
 
-  const handleAccepted = () => {
-    setValue("accepted", checked);
+  const handleAccepted = (e:MouseEvent<HTMLInputElement>) => {
+        setValue("accepted", e.currentTarget.checked);
     setChecked(!checked);
   };
 

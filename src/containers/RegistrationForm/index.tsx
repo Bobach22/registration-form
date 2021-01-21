@@ -100,7 +100,7 @@ const RegistrationForm: React.FC<any> = (props) => {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
       <FormTitle>Регистрация</FormTitle>
       <Block className={styles.hints__block}>
         {" "}

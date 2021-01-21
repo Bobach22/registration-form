@@ -3,6 +3,8 @@ This form created based on this [this](https://www.figma.com/file/Lz2p2uwl96ck03
 
 The demo is [here](https://registration-form-one.vercel.app)
 
+**&nbsp;The phone number input accepts only russian numbers**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

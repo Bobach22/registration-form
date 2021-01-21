@@ -1,5 +1,5 @@
 # A simple registration form
-This form created based on this [this](https://www.figma.com/file/Lz2p2uwl96ck03V4qkJL0w/Untitled?node-id=302%3A102) figma design files
+This form created based on this [these](https://www.figma.com/file/Lz2p2uwl96ck03V4qkJL0w/Untitled?node-id=302%3A102) figma design files
 
 The demo is [here](https://registration-form-one.vercel.app)
 
